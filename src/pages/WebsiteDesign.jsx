@@ -14,7 +14,7 @@ import AwardSec from '../components/serviceAwardSec';
 import TechStack from '../components/TechStack';
 <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"></link>
 
-const websiteDesign = () => {
+const WebsiteDesign = () => {
     const [hoveredItem, setHoveredItem] = useState(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -784,4 +784,4 @@ const websiteDesign = () => {
     );
 }
 
-export default websiteDesign;
+export default WebsiteDesign;

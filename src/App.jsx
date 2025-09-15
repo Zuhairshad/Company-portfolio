@@ -6,7 +6,7 @@ import Work from "./pages/Work.jsx"
 import CaseStudy from "./pages/CaseStudy.jsx";
 import Contact from "./pages/Contact.jsx"
 import RequestProposal from "./pages/RequestProposal.jsx";
-import websiteDesign from "./pages/websiteDesign.jsx";
+import WebsiteDesign from "./pages/WebsiteDesign.jsx";
 import Navbar from "./components/Navbar.jsx";
 import UIUX from "./pages/UIUX.jsx";
 import DigitalMarketing from "./pages/DigitalMarketing.jsx";
@@ -25,7 +25,7 @@ export default function App() {
         <Route path="/work/:id" element={<CaseStudy />} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/proposalrequest" element={<RequestProposal/>} />
-        <Route path="/services/web-development" element={<websiteDesign />} />
+        <Route path="/services/web-development" element={<WebsiteDesign/>} />
         <Route path="/services/SEO" element={<SEO/>}/>
         <Route path="/services/UIUX" element={<UIUX />} />
         <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
