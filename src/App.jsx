@@ -21,7 +21,7 @@ const VideoEditing = lazy(() => import("./pages/VideoEditing.jsx"));
 
 // 404 (lazy) with safe fallback if the file is missing during dev
 const NotFound = lazy(() =>
-  import("./pages/NotFound.jsx").catch(() => ({
+  import("./pages/Notfound.jsx").catch(() => ({
     default: () => <div className="p-8">Not Found</div>,
   }))
 );
@@ -50,7 +50,7 @@ export default function App() {
           <Route path="/services/app-development" element={<AppDevelopment />} />
 
           {/* 404 */}
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Notfound />} />
         </Routes>
       </Suspense>
     </>
