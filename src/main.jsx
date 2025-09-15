@@ -1,3 +1,6 @@
+console.log('[BOOT] main.jsx loaded');  // TEMP log
+
+
 // src/main.jsx
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
