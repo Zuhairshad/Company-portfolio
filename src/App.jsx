@@ -50,7 +50,7 @@ export default function App() {
           <Route path="/services/app-development" element={<AppDevelopment />} />
 
           {/* 404 */}
-          <Route path="*" element={<Notfound />} />
+          <Route path="/not-found" element={<Notfound />} />
         </Routes>
       </Suspense>
     </>
