@@ -1,7 +1,6 @@
 // src/components/Navbar.jsx
-import { useEffect, useState, useMemo, useRef } from "react";
-import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 function cx(...args) {
   return args.filter(Boolean).join(" ");
@@ -17,6 +16,7 @@ export default function Navbar() {
 
   const H_EXPANDED = 112;
   const H_COMPACT = 80;
+  const SCROLL_THRESHOLD = 10;
 
   // prevent background scroll when mobile menu is open
   useEffect(() => {
@@ -27,19 +27,33 @@ export default function Navbar() {
     };
   }, [mobileOpen]);
 
-  // compact nav on scroll
+  // compact nav on scroll — only update state when threshold crosses
   useEffect(() => {
-    const apply = () => {
-      document.documentElement.style.setProperty(
-        "--nav-h",
-        `${window.scrollY > 10 ? H_COMPACT : H_EXPANDED}px`
-      );
+    const root = document.documentElement;
+    let ticking = false;
+
+    const applyNavHeight = (isScrolled) => {
+      root.style.setProperty("--nav-h", `${isScrolled ? H_COMPACT : H_EXPANDED}px`);
     };
-    apply();
+
     const onScroll = () => {
-      setScrolled(window.scrollY > 10);
-      apply();
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const next = window.scrollY > SCROLL_THRESHOLD;
+        // only update when it changes to avoid re-render storms
+        setScrolled((prev) => {
+          if (prev !== next) applyNavHeight(next);
+          return next === prev ? prev : next;
+        });
+        ticking = false;
+      });
     };
+
+    // initial
+    applyNavHeight(window.scrollY > SCROLL_THRESHOLD);
+    setScrolled(window.scrollY > SCROLL_THRESHOLD);
+
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -49,7 +63,8 @@ export default function Navbar() {
     setMobileOpen(false);
     setOpenDropdown(null);
     setMobileServicesOpen(false);
-    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    // 'instant' isn't a valid behavior; use auto (or just window.scrollTo(0,0))
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, [pathname]);
 
   // close dropdown on outside click
@@ -86,6 +101,7 @@ export default function Navbar() {
     { to: "/contact", label: "Contact" },
   ];
 
+  // NOTE: No /services/graphic-designing route yet; point to UI/UX to avoid 404s.
   const serviceLinks = [
     { label: "Web Design & Development", to: "/services/web-development" },
     { label: "SEO", to: "/services/SEO" },
@@ -95,14 +111,11 @@ export default function Navbar() {
     { label: "Google PPC Ads", to: "/services/google-ppc-ads" },
     { label: "Virtual Assistance", to: "/services/virtual-assistance" },
     { label: "Video Editing", to: "/services/video-editing" },
-    { label: "Graphic Designing", to: "/services/graphic-designing" },
+    { label: "Graphic Designing", to: "/services/UIUX" }, // temp
   ];
 
   return (
-    <motion.header
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.35 }}
+    <header
       className={cx(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
@@ -125,7 +138,7 @@ export default function Navbar() {
         >
           <span
             className={cx(
-              "font-['Poppins'] tracking-tight block truncate",
+              "font-['Poppins'] tracking-tight block truncate transition-all",
               scrolled
                 ? "text-[clamp(22px,4vw,30px)] text-slate-900"
                 : "text-[clamp(26px,5vw,36px)] text-white"
@@ -150,7 +163,7 @@ export default function Navbar() {
             </NavLink>
           ))}
 
-          {/* Services dropdown */}
+          {/* Services dropdown (CSS transitions only) */}
           <div className="relative">
             <button
               type="button"
@@ -167,9 +180,10 @@ export default function Navbar() {
                 height="16"
                 viewBox="0 0 24 24"
                 className={cx(
-                  "transition",
+                  "transition-transform",
                   openDropdown === "services" && "rotate-180"
                 )}
+                aria-hidden="true"
               >
                 <path
                   d="m19.5 8.25-7.5 7.5-7.5-7.5"
@@ -185,7 +199,7 @@ export default function Navbar() {
               id="services-menu"
               ref={dropdownRef}
               className={cx(
-                "absolute left-0 top-full mt-2 w-56 rounded-md border transition duration-200",
+                "absolute left-0 top-full mt-2 w-56 rounded-md border transition-opacity duration-200",
                 scrolled
                   ? "bg-white border-slate-200 shadow-lg"
                   : "bg-[#151515] border-white/10 shadow-soft",
@@ -352,7 +366,8 @@ export default function Navbar() {
               width="18"
               height="18"
               viewBox="0 0 24 24"
-              className={cx("transition", mobileServicesOpen && "rotate-180")}
+              className={cx("transition-transform", mobileServicesOpen && "rotate-180")}
+              aria-hidden="true"
             >
               <path
                 d="m19.5 8.25-7.5 7.5-7.5-7.5"
@@ -390,6 +405,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </motion.header>
+    </header>
   );
 }

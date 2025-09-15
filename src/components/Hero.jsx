@@ -1,3 +1,6 @@
+// src/components/Hero.jsx
+import { Link } from "react-router-dom";
+
 // Hero component WITHOUT framer-motion for debugging
 export default function Hero({
   variant = "default",
@@ -18,8 +21,10 @@ export default function Hero({
     { label: "Request a Proposal", href: "/contact", primary: true },
     { label: "Let's Discuss", href: "/contact", primary: false },
   ],
-  // NEW:
   titleColor = "text-white",
+  // NEW: fine-tune background focal point per variant (e.g., "50% 60%")
+  bgPositionDefault = "50% 0%",
+  bgPositionAbout = "50% 60%",
 }) {
   const isAbout = variant === "about";
   const fullBleed = fillViewport && !minH;
@@ -32,14 +37,27 @@ export default function Hero({
       ? "min-h-[calc(80svh-var(--nav-h,0px))] md:min-h-[calc(80dvh-var(--nav-h,0px))]"
       : "min-h-[calc(100svh-var(--nav-h,0px))] md:min-h-[calc(100dvh-var(--nav-h,0px))]";
 
+  // helper: srcSet for common widths (works for local assets too when using Vite)
+  const desktopSrcSet = `${imgDesktop} 1200w, ${imgDesktop} 1600w, ${imgDesktop} 2000w`;
+  const mobileSrcSet = `${imgMobile} 640w, ${imgMobile} 960w, ${imgMobile} 1200w`;
+
   if (variant === "work") {
     return (
       <section className={["relative isolate flex items-center justify-center text-white", heroMinH].join(" ")}>
         {/* BG */}
         <div className="absolute inset-0 z-0 bg-slate-950">
           <picture>
-            <source media="(min-width: 640px)" srcSet={imgDesktop} />
-            <img src={imgMobile} alt="Work background" className="h-full w-full object-cover object-center" fetchpriority="high" loading="eager" sizes="100vw" />
+            <source media="(min-width: 640px)" srcSet={desktopSrcSet} />
+            <img
+              src={imgMobile}
+              srcSet={mobileSrcSet}
+              alt="Work background"
+              className="h-full w-full object-cover object-center"
+              fetchPriority="high"
+              loading="eager"
+              decoding="async"
+              sizes="100vw"
+            />
           </picture>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70 pointer-events-none" />
           <div className={`absolute inset-0 pointer-events-none ${overlayClass}`} />
@@ -66,21 +84,24 @@ export default function Hero({
     );
   }
 
-  /* =======================
-   * DEFAULT / ABOUT VARIANTS
-   * ======================= */
+  // =======================
+  // DEFAULT / ABOUT VARIANTS
+  // =======================
   return (
     <section className={["relative isolate text-white flex items-end", heroMinH].join(" ")}>
       {/* ---- Background (responsive <picture>) ---- */}
       <div className="absolute inset-0 z-0 bg-[#0B0F19]">
         <picture>
-          <source media="(min-width: 640px)" srcSet={imgDesktop} />
+          <source media="(min-width: 640px)" srcSet={desktopSrcSet} />
           <img
             src={imgMobile}
+            srcSet={mobileSrcSet}
             alt="Showcase"
-            className={["h-full w-full object-cover", isAbout ? "object-[50%_60%]" : "object-[50%_0%]"].join(" ")}
-            fetchpriority="high"
+            className="h-full w-full object-cover"
+            style={{ objectPosition: isAbout ? bgPositionAbout : bgPositionDefault }}
+            fetchPriority="high"
             loading="eager"
+            decoding="async"
             sizes="100vw"
           />
         </picture>
@@ -95,21 +116,15 @@ export default function Hero({
 
       {/* ---- Foreground ---- */}
       <div className="relative z-10 lg:pb-20 mx-auto w-full max-w-[1700px] px-4 sm:px-6 md:px-8 pb-6 sm:pb-8">
-        {/* ✅ Align columns nicely */}
         <div className="grid lg:grid-cols-12 gap-6 sm:gap-8 md:gap-10 items-center">
           {/* Left: Heading + CTAs */}
-          <div
-            className={[
-              isAbout ? "lg:col-span-6 lg:pl-0" : "lg:col-span-7 lg:pl-10",
-              "px-4 sm:px-6"
-            ].join(" ")}
-          >
+          <div className={[isAbout ? "lg:col-span-6 lg:pl-0" : "lg:col-span-7 lg:pl-10", "px-4 sm:px-6"].join(" ")}>
             <div
               className={[
                 isAbout ? "max-w-[720px]" : "max-w-[680px]",
                 "drop-shadow-[0_2px_16px_rgba(0,0,0,0.4)]",
-                "mx-auto sm:mx-0",            // center on mobile, align to gutter on desktop
-                !isAbout && "text-center sm:text-left"
+                "mx-auto sm:mx-0",
+                !isAbout && "text-center sm:text-left",
               ].join(" ")}
             >
               <h1 className="font-extrabold tracking-tight leading-[1.05] text-[32px] xs:text-[38px] sm:text-[46px] md:text-[56px]">
@@ -130,7 +145,7 @@ export default function Hero({
                   <div className="flex items-center gap-6 pt-6">
                     <span className="text-xs tracking-wide text-white/50 uppercase">Featured On</span>
                     {featured.map(({ src, alt, height = 24 }, i) => (
-                      <img key={i} src={src} alt={alt} className="opacity-90" style={{ height }} />
+                      <img key={i} src={src} alt={alt} className="opacity-90" style={{ height }} loading="lazy" decoding="async" />
                     ))}
                   </div>
                 )}
@@ -150,9 +165,9 @@ export default function Hero({
                 {!!ctas?.length && (
                   <div className="mt-4 flex flex-wrap gap-3 justify-center sm:justify-start">
                     {ctas.map(({ label, href, primary }) => (
-                      <a
+                      <Link
                         key={label}
-                        href={href}
+                        to={href}
                         className={
                           primary
                             ? "inline-flex items-center gap-2 rounded-xl px-5 py-3 bg-white text-black font-semibold hover:opacity-90 transition"
@@ -160,10 +175,10 @@ export default function Hero({
                         }
                       >
                         <span>{label}</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5">
+                        <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5">
                           <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                         </svg>
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}

@@ -1,7 +1,39 @@
 // src/components/ServicesSection.jsx
-import { useState } from "react";
+import React, { memo, useEffect, useRef, useState, Suspense } from "react";
+import { Link } from "react-router-dom";
 
-function ExactServiceCard({
+// --- Gate: mount children when near the viewport (preload ~200px early)
+function LazyMount({ children, rootMargin = "200px 0px", minHeight = 320 }) {
+  const [show, setShow] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (show) return;
+    const el = ref.current;
+    if (!el) return;
+
+    const obs = new IntersectionObserver(
+      ([e]) => {
+        if (e.isIntersecting) {
+          setShow(true);
+          obs.disconnect();
+        }
+      },
+      { rootMargin }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [show, rootMargin]);
+
+  return (
+    <div ref={ref} style={{ minHeight: show ? undefined : minHeight }}>
+      {show ? children : null}
+    </div>
+  );
+}
+
+// --- Service Card
+const ExactServiceCard = memo(function ExactServiceCard({
   title,
   intro,
   more,
@@ -27,9 +59,7 @@ function ExactServiceCard({
         {open ? "Read less" : "Read more"}
       </button>
 
-      {open && (
-        <p className="mt-3 text-base leading-7 text-slate-700">{more}</p>
-      )}
+      {open && <p className="mt-3 text-base leading-7 text-slate-700">{more}</p>}
 
       {/* Tags */}
       {!!tags.length && (
@@ -45,10 +75,10 @@ function ExactServiceCard({
         </div>
       )}
 
-      {/* CTA */}
+      {/* CTA – use <Link> for client-side routing */}
       <div className="mt-6">
-        <a
-          href={primary.href}
+        <Link
+          to={primary.href || "#"}
           className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-2.5 text-sm font-semibold text-white hover:bg-slate-800 transition whitespace-nowrap"
         >
           {primary.label}
@@ -62,13 +92,14 @@ function ExactServiceCard({
               strokeLinejoin="round"
             />
           </svg>
-        </a>
+        </Link>
       </div>
     </div>
   );
-}
+});
 
 export default function Services() {
+  // Map only to routes that exist in App.jsx right now
   const services = [
     {
       title: "App Development",
@@ -122,7 +153,8 @@ export default function Services() {
       more:
         "From brand kits and illustrations to marketing collaterals and social packs, our designers craft assets that tell your story consistently across platforms.",
       tags: ["Brand Kit", "Social Creatives", "Print", "Illustration"],
-      primary: { label: "Learn More", href: "/services/graphic-designing" },
+      // TEMP: you don't have /services/graphic-designing route yet.
+      primary: { label: "Learn More", href: "/services/UIUX" },
     },
     {
       title: "Google PPC Ads",
@@ -153,6 +185,18 @@ export default function Services() {
     },
   ];
 
+  // responsive image for the left card
+  const featuredImg =
+    "https://images.unsplash.com/photo-1493666438817-866a91353ca9";
+  const base = featuredImg.split("?")[0];
+  const query = "q=80&auto=format&fit=crop";
+  const srcSet = [
+    `${base}?${query}&w=640 640w`,
+    `${base}?${query}&w=960 960w`,
+    `${base}?${query}&w=1200 1200w`,
+    `${base}?${query}&w=1600 1600w`,
+  ].join(", ");
+
   return (
     <section className="bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16">
@@ -172,46 +216,55 @@ export default function Services() {
               </p>
 
               <div className="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-md">
-                <img
-                  src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?q=80&w=1200&auto=format&fit=crop"
-                  alt="Featured project"
-                  className="w-full h-60 object-cover"
-                  loading="lazy"
-                />
+                <div className="relative w-full h-60">
+                  <img
+                    src={`${base}?${query}&w=1200`}
+                    srcSet={srcSet}
+                    sizes="(min-width: 1024px) 384px, 100vw"
+                    alt="Featured project"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
                 <div className="p-5">
                   <div className="text-sm font-semibold text-slate-900">
                     Leaside Blvd
                   </div>
-                  <a
-                    href="#"
+                  <Link
+                    to="/work/2992-sheppard"
                     className="mt-2 inline-block text-sm font-semibold underline text-slate-700"
                   >
                     Read Our Case
-                  </a>
+                  </Link>
                 </div>
               </div>
 
               <div className="flex items-center gap-3">
-                <a
-                  href="#"
+                <Link
+                  to="/proposalrequest"
                   className="inline-flex items-center justify-center rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white whitespace-nowrap"
                 >
                   Request a Proposal
-                </a>
-                <a href="#" className="text-sm text-slate-700">
+                </Link>
+                <Link to="/contact" className="text-sm text-slate-700">
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </aside>
 
-          {/* RIGHT cards (ensure higher stacking) */}
+          {/* RIGHT cards — gate the whole grid for TBT savings */}
           <div className="lg:col-span-2 relative z-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
-              {services.map((s) => (
-                <ExactServiceCard key={s.title} {...s} />
-              ))}
-            </div>
+            <LazyMount minHeight={280}>
+              <Suspense fallback={null}>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
+                  {services.map((s) => (
+                    <ExactServiceCard key={s.title} {...s} />
+                  ))}
+                </div>
+              </Suspense>
+            </LazyMount>
           </div>
         </div>
       </div>
