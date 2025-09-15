@@ -86,7 +86,7 @@ export default function Services() {
       more:
         "From MVPs for startups to enterprise-scale solutions, our app development covers end-to-end: planning, prototyping, development, testing, and continuous integration. We prioritize performance, offline-first experiences, and future scalability.",
       tags: ["iOS", "Android", "React Native", "Node.js"],
-      primary: { label: "Learn More", href: "/app-development" },
+      primary: { label: "Learn More", href: "/services/app-development" },
     },
     {
       title: "Web Design & Development",
@@ -95,7 +95,7 @@ export default function Services() {
       more:
         "Whether it’s a marketing site or a robust e-commerce build, we deliver blazing speed, accessibility, and SEO-ready structures. Our sites are optimized for scalability, integrations, and top-tier performance.",
       tags: ["Next.js", "React.js", "WordPress", "Webflow", "Shopify"],
-      primary: { label: "Learn More", href: "/web-design" },
+      primary: { label: "Learn More", href: "/services/web-development" },
     },
     {
       title: "Search Engine Optimization (SEO)",
@@ -104,7 +104,7 @@ export default function Services() {
       more:
         "We dive deep into keyword strategy, optimize on-page elements, and strengthen your backlink profile. From Core Web Vitals to schema integration, we ensure your site stands out in search and drives meaningful traffic.",
       tags: ["Technical SEO", "On-Page", "Off-Page"],
-      primary: { label: "Learn More", href: "/seo" },
+      primary: { label: "Learn More", href: "/services/SEO" },
     },
     {
       title: "Digital Marketing",
@@ -113,7 +113,7 @@ export default function Services() {
       more:
         "Our team crafts compelling creatives and landing pages, manages ad spend with precision, and leverages analytics to scale ROI. Whether performance marketing or brand awareness, we ensure your message resonates.",
       tags: ["Performance", "Social Ads", "Email/SMS", "Landing Pages", "Analytics"],
-      primary: { label: "Learn More", href: "/digital-marketing" },
+      primary: { label: "Learn More", href: "/services/digital-marketing" },
     },
     {
       title: "UI / UX",
@@ -122,7 +122,7 @@ export default function Services() {
       more:
         "We run detailed user research, build wireframes, and create clickable prototypes. Every design decision is backed by usability tests, ensuring intuitive experiences and measurable results.",
       tags: ["Wireframes", "Prototypes", "Usability", "Design System"],
-      primary: { label: "Learn More", href: "/ui-ux" },
+      primary: { label: "Learn More", href: "/services/UIUX" },
     },
     {
       title: "Graphic Designing",
@@ -131,7 +131,7 @@ export default function Services() {
       more:
         "From brand kits and illustrations to marketing collaterals and social packs, our designers craft assets that tell your story consistently across platforms.",
       tags: ["Brand Kit", "Social Creatives", "Print", "Illustration"],
-      primary: { label: "Learn More", href: "/graphic-designing" },
+      primary: { label: "Learn More", href: "/services/graphic-designing" },
     },
     {
       title: "Google PPC Ads",
@@ -140,7 +140,7 @@ export default function Services() {
       more:
         "We set up, manage, and optimize Google Ads campaigns across Search, Display, Shopping, and YouTube. Our data-driven approach focuses on reducing CPC and increasing ROAS.",
       tags: ["Search", "Display", "YouTube", "Shopping", "GA4", "GTM"],
-      primary: { label: "Learn More", href: "/google-ppc-ads" },
+      primary: { label: "Learn More", href: "/services/google-ppc-ads" },
     },
     {
       title: "Virtual Assistance",
@@ -149,7 +149,7 @@ export default function Services() {
       more:
         "Our virtual assistants can handle inbox management, CRM hygiene, research, scheduling, reporting, and more—giving you time to focus on strategic growth.",
       tags: ["Admin", "Research", "CRM", "Scheduling", "Reporting"],
-      primary: { label: "Learn More", href: "/virtual-assistance" },
+      primary: { label: "Learn More", href: "/services/virtual-assistance" },
     },
     {
       title: "Video Editing",
@@ -158,7 +158,7 @@ export default function Services() {
       more:
         "From short-form TikTok/Reels to polished long-form YouTube edits, we cover cutting, captions, color grading, motion graphics, and sound design.",
       tags: ["Short-form", "Long-form", "Color", "Motion Graphics", "Captions"],
-      primary: { label: "Learn More", href: "/video-editing" },
+      primary: { label: "Learn More", href: "/services/video-editing" },
     },
   ];
 
