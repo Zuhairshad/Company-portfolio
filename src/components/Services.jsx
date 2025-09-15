@@ -11,9 +11,7 @@ function ExactServiceCard({
   const [open, setOpen] = useState(false);
 
   return (
-    <div
-      className="h-full w-auto border border-slate-200 bg-white px-8 py-8 xl:px-10 xl:py-10 shadow-md rounded-2xl transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-    >
+    <div className="h-full w-auto border border-slate-200 bg-white px-8 py-8 xl:px-10 xl:py-10 shadow-md rounded-2xl transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
       {/* Title */}
       <h2 className="text-2xl font-bold mb-4 text-slate-900">{title}</h2>
 
@@ -51,15 +49,10 @@ function ExactServiceCard({
       <div className="mt-6">
         <a
           href={primary.href}
-          className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-2.5 text-sm font-semibold text-white hover:bg-slate-800 transition"
+          className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-2.5 text-sm font-semibold text-white hover:bg-slate-800 transition whitespace-nowrap"
         >
           {primary.label}
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            className="opacity-70"
-          >
+          <svg width="16" height="16" viewBox="0 0 24 24" className="opacity-70">
             <path
               d="M8.25 4.5l7.5 7.5-7.5 7.5"
               fill="none"
@@ -76,8 +69,6 @@ function ExactServiceCard({
 }
 
 export default function Services() {
-  const NAV_OFFSET_PX = 88;
-
   const services = [
     {
       title: "App Development",
@@ -165,16 +156,13 @@ export default function Services() {
   return (
     <section className="bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16">
-        <h2 className="text-center text-5xl font-bold mb-12 text-slate-900">
+        <h2 className="text-center text-4xl sm:text-5xl font-bold mb-12 text-slate-900">
           Webify Tech Creative Services
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14">
-          {/* LEFT sticky info panel */}
-          <aside
-            className="hidden lg:block lg:col-span-1 self-start -ml-6"
-            style={{ position: "sticky", top: NAV_OFFSET_PX }}
-          >
+          {/* LEFT sticky info panel (sticky only on lg+) */}
+          <aside className="col-span-1 self-start relative z-0 lg:sticky lg:top-24 lg:-ml-6">
             <div className="space-y-4 bg-white">
               <div className="text-xs uppercase tracking-wide text-slate-500">
                 Our Services
@@ -206,7 +194,7 @@ export default function Services() {
               <div className="flex items-center gap-3">
                 <a
                   href="#"
-                  className="inline-flex items-center justify-center rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white"
+                  className="inline-flex items-center justify-center rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white whitespace-nowrap"
                 >
                   Request a Proposal
                 </a>
@@ -217,8 +205,8 @@ export default function Services() {
             </div>
           </aside>
 
-          {/* RIGHT cards */}
-          <div className="lg:col-span-2">
+          {/* RIGHT cards (ensure higher stacking) */}
+          <div className="lg:col-span-2 relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
               {services.map((s) => (
                 <ExactServiceCard key={s.title} {...s} />

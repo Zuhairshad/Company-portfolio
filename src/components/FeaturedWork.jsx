@@ -54,20 +54,13 @@ const items = [
   },
 ];
 
-
 export default function FeaturedWork() {
-  const stickyTop = "calc(var(--nav-h, 80px) + 16px)";
-
   return (
     <section className="section bg-white py-16 lg:py-24">
-      {/* ⬅ widen page container */}
       <div className="mx-auto w-full max-w-[90rem] px-4 sm:px-6 lg:px-8">
-        {/* ⬅ give more space to the cards: 3 / 9 split */}
         <div className="grid grid-cols-12 gap-8 lg:gap-10">
-          <aside
-            className="col-span-12 lg:col-span-3 self-start sticky"
-            style={{ top: stickyTop }}
-          >
+          {/* Left aside — sticky only on lg+ */}
+          <aside className="col-span-12 lg:col-span-3 self-start relative z-0 lg:sticky lg:top-24">
             <div className="space-y-6">
               <div>
                 <span className="text-2xl tracking-wide uppercase text-slate-500">
@@ -82,14 +75,14 @@ export default function FeaturedWork() {
               <div className="flex flex-wrap gap-3">
                 <a
                   href="#"
-                  className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-white text-sm font-semibold hover:bg-blue-700 transition"
+                  className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-white text-sm font-semibold hover:bg-blue-700 transition whitespace-nowrap"
                 >
-                  <span className="p-2">Request a Proposal</span>
+                  <span>Request a Proposal</span>
                   <Chevron />
                 </a>
                 <a
                   href="#"
-                  className="inline-flex items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-slate-800 text-sm font-semibold hover:bg-slate-50 transition"
+                  className="inline-flex items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-slate-800 text-sm font-semibold hover:bg-slate-50 transition whitespace-nowrap"
                 >
                   <span>Contact Us</span>
                   <Chevron />
@@ -98,9 +91,10 @@ export default function FeaturedWork() {
             </div>
           </aside>
 
-          <div className="col-span-12 lg:col-span-9 space-y-10">
-            {items.map((p, i) => (
-              <ProjectCard key={i} {...p} />
+          {/* Right — project cards */}
+          <div className="col-span-12 lg:col-span-9 space-y-10 relative z-10">
+            {items.map((p) => (
+              <ProjectCard key={p.id} {...p} />
             ))}
           </div>
         </div>
@@ -124,6 +118,7 @@ function ProjectCard({
         src={image}
         alt={title}
         className="h-[600px] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+        loading="lazy"
       />
 
       <div className="pointer-events-none absolute inset-0">
@@ -158,7 +153,7 @@ function ProjectCard({
           <div className="flex flex-wrap gap-3">
             <a
               href={caseHref || "#"}
-              className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-md hover:shadow-lg transition"
+              className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-md hover:shadow-lg transition whitespace-nowrap"
             >
               Read Our Case
               <Chevron />
@@ -169,7 +164,7 @@ function ProjectCard({
                 href={liveHref}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-black/70 px-4 py-2 text-sm font-semibold text-white ring-1 ring-white/20 backdrop-blur hover:bg-black/80 transition"
+                className="inline-flex items-center gap-2 rounded-full bg-black/70 px-4 py-2 text-sm font-semibold text-white ring-1 ring-white/20 backdrop-blur hover:bg-black/80 transition whitespace-nowrap"
               >
                 Live Site
                 <Chevron />
