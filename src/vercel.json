@@ -1,6 +1,11 @@
-{
+
+  {
     "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
+      { "source": "/assets/(.*)", "destination": "/assets/$1" },
+      { "source": "/favicon.ico", "destination": "/favicon.ico" },
+      { "source": "/manifest.webmanifest", "destination": "/manifest.webmanifest" },
+      { "source": "/(.*)\\.(js|css|png|jpg|jpeg|gif|svg|ico|webp|woff|woff2|ttf|map)", "destination": "/$1.$2" },
+      { "source": "/(.*)", "destination": "/index.html" }
     ]
   }
   
