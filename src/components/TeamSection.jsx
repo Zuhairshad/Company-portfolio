@@ -5,7 +5,7 @@ const TEAM = [
     name: "Mubashir Aslam",
     role: "Founder & Managing Director",
     bio: "Sets vision and strategy, leads partnerships, and oversees delivery quality across all projects.",
-    img: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=800&auto=format&fit=crop",
+    img: "/mub.jpg",
   },
   {
     name: "Owais",
@@ -19,12 +19,7 @@ const TEAM = [
     bio: "Builds pipelines and proposals, aligns client needs with scope, and delivers WordPress solutions end-to-end.",
     img: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=800&auto=format&fit=crop",
   },
-  {
-    name: "Saim Ayub",
-    role: "UI/UX & Graphic Designer",
-    bio: "Designs systems, visuals, and interactive prototypes; crafts clear, accessible interfaces.",
-    img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
-  },
+  
   {
     name: "Muneeb Mustafa",
     role: "E-commerce Specialist",
@@ -34,27 +29,15 @@ const TEAM = [
   {
     name: "Zuhair Ahmad Shad",
     role: "Full-Stack Developer",
-    bio: "Leads a 4-member engineering squad; ships performant React/Node stacks with strong code quality and velocity.",
-    img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=800&auto=format&fit=crop"
-    ,
+    bio: "Leads a engineering squad; ships performant React/Node stacks with strong code quality and velocity.",
+    img: "/zuh.jpg",
   },
-  {
-    name: "Maryam",
-    role: "SEO Strategist",
-    bio: "Drives keyword research, on-page/off-page plans, content briefs, and technical SEO audits.",
-    img: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop",
-  },
-  {
-    name: "Hannan Saleem",
-    role: "Web Developer (WordPress/Webflow) & SEO Specialist",
-    bio: "Builds fast, maintainable sites in WordPress and Webflow; pairs development with SEO best practices.",
-    img: "https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?q=80&w=800&auto=format&fit=crop",
-  },
+  
   {
     name: "Muhammad Musa",
     role: "Business Development Associate",
     bio: "Prospecting, outreach, and discovery—turns opportunities into long-term client relationships.",
-    img: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=800&auto=format&fit=crop",
+    img: "/mus.jpg",
   },
 ];
 

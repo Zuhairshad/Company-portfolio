@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import RecentClients from "../components/RecentClients";
 import FaqsSection from "../components/FaqsSection";
 import IndustriesSection from "../components/IndustriesSection";
 import Insights from "../components/Insights";
@@ -7,8 +6,8 @@ import FooterIntro from "../components/FooterIntro";
 import TestimonialsSection from "../components/TestimonialsSection";
 import ContactSection from '../components/ContactSection';
 import HeroSection from '../components/serviceHero';
-import AwardSec from '../components/serviceAwardSec';
 import VideoService from '../components/VideoService';
+import ShowReels from '../components/ShowReels';
 <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"></link>
 
 const VideoEditing = () => {
@@ -201,6 +200,7 @@ const VideoEditing = () => {
 
       {/* Use only ONE of the twin components (kept for layout parity) */}
       <VideoService />
+      <ShowReels />
 
       {/* DIFFERENTIATORS */}
       <section className="w-full px-8 md:px-20 py-24 flex flex-col justify-center items-center relative overflow-hidden bg-gray-50">
@@ -391,9 +391,7 @@ const VideoEditing = () => {
         </div>
       </section>
 
-      <RecentClients />
-      <IndustriesSection />
-      <FaqsSection />
+    
       <Insights />
       <TestimonialsSection />
       <ContactSection />

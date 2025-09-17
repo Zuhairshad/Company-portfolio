@@ -198,7 +198,7 @@ export default function Services() {
   ].join(", ");
 
   return (
-    <section className="bg-white">
+    <section className="bg-[#FAF9F6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16">
         <h2 className="text-center text-4xl sm:text-5xl font-bold mb-12 text-slate-900">
           Webify Tech Creative Services

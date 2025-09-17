@@ -18,6 +18,7 @@ const AppDevelopment = lazy(() => import("./pages/AppDevelopment.jsx"));
 const GooglePpcAds = lazy(() => import("./pages/GooglePpcAds.jsx"));
 const VirtualAssistance = lazy(() => import("./pages/VirtualAssistance.jsx"));
 const VideoEditing = lazy(() => import("./pages/VideoEditing.jsx"));
+const GraphicDesigning = lazy(() => import("./pages/GraphicDesigning.jsx"));
 
 // Optional: simple 404 page (lazy too)
 
@@ -40,6 +41,7 @@ export default function App() {
         <Route path="/services/virtual-assistance" element={<VirtualAssistance />} />
         <Route path="/services/video-editing" element={<VideoEditing />} />
         <Route path="/services/app-development" element={<AppDevelopment />} />
+        <Route path="/services/graphic-designing" element={<GraphicDesigning />} />
       </Routes>
     </>
   );

@@ -207,7 +207,7 @@ function Chevron() {
 
 export default function FeaturedWork() {
   return (
-    <section className="section bg-white py-16 lg:py-24">
+    <section className="section bg-slate-100 py-16 lg:py-24">
       <div className="mx-auto w-full max-w-[90rem] px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-12 gap-8 lg:gap-10">
           {/* Left aside — sticky only on lg+ */}

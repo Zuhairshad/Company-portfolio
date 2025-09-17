@@ -56,7 +56,7 @@ function MarqueeRow({ items, speed = 12 }) {
 
 export default function RecentClients() {
   return (
-    <section className="bg-slate-100 text-slate-900 py-20 md:py-28">
+    <section className="bg-white text-slate-900 py-20 md:py-28">
       <div className="mx-auto w-full max-w-6xl px-4 text-center">
       <span className="inline-block text-xs px-3 py-1 rounded-full bg-white/5 text-black"> Clients &amp; Achievements </span>
         {/* Title + Subtitle */}
