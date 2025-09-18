@@ -11,20 +11,20 @@ const TEAM = [
     name: "Owais",
     role: "Head of E-commerce",
     bio: "Owns marketplace strategy, catalog operations, and conversion optimization powered by data.",
-    img: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=800&auto=format&fit=crop",
+    img: "/awa.jpg",
   },
   {
     name: "Muneeb Tariq",
     role: "Business Development Manager",
     bio: "Builds pipelines and proposals, aligns client needs with scope, and delivers WordPress solutions end-to-end.",
-    img: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=800&auto=format&fit=crop",
+    img: "/mun.jpg",
   },
   
   {
     name: "Muneeb Mustafa",
     role: "E-commerce Specialist",
     bio: "Manages storefronts, listings, promotions, and performance to drive revenue and retention.",
-    img: "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?q=80&w=800&auto=format&fit=crop",
+    img: "/munn.jpg",
   },
   {
     name: "Zuhair Ahmad Shad",
@@ -32,6 +32,7 @@ const TEAM = [
     bio: "Leads a engineering squad; ships performant React/Node stacks with strong code quality and velocity.",
     img: "/zuh.jpg",
   },
+  
   
   {
     name: "Muhammad Musa",
@@ -64,8 +65,8 @@ export default function TeamSection() {
         <div className="mt-10 md:mt-12">
           <ul
             className="
-              grid gap-5 sm:gap-6 lg:gap-8
-              grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
+              grid gap-6 sm:gap-8 lg:gap-10
+              grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3
             "
             role="list"
           >
@@ -74,41 +75,38 @@ export default function TeamSection() {
                 <article
                   className="
                     h-full rounded-2xl border border-slate-200 bg-white
-                    shadow-sm hover:shadow-md transition-shadow
-                    overflow-hidden
+                    shadow-sm hover:shadow-xl hover:shadow-orange-100/50
+                    transition-all duration-300 ease-in-out
+                    hover:-translate-y-2 hover:border-orange-200
+                    overflow-hidden group cursor-pointer
                   "
                 >
                   {/* Avatar */}
-                  <div className="aspect-[16/9] overflow-hidden">
+                  <div className="aspect-[16/9] overflow-hidden relative">
                     <img
                       src={m.img}
                       alt={`${m.name} headshot`}
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
                       loading="lazy"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
 
                   {/* Info */}
-                  <div className="p-5 sm:p-6">
+                  <div className="p-6 sm:p-7">
                     <div className="flex items-baseline justify-between gap-4">
-                      <h3 className="text-lg font-semibold text-slate-900">{m.name}</h3>
-                      <span className="text-xs font-medium uppercase tracking-wide text-slate-500">
+                      <h3 className="text-xl font-semibold text-slate-900 group-hover:text-orange-600 transition-colors duration-300">
+                        {m.name}
+                      </h3>
+                      <span className="text-xs font-medium uppercase tracking-wide text-slate-500 group-hover:text-orange-500 transition-colors duration-300">
                         {m.role}
                       </span>
                     </div>
 
-                    <div className="my-3 h-px bg-slate-200" />
+                    <div className="my-4 h-px bg-slate-200 group-hover:bg-orange-200 transition-colors duration-300" />
 
-                    {/* Bio (hover effect ONLY here) */}
-                    <p
-                      className="
-                        text-slate-600 leading-6 rounded-md
-                        transition-colors duration-200
-                        hover:bg-sky-50 hover:text-sky-800
-                        p-2 -m-2
-                      "
-                      title="Hover highlights only the bio"
-                    >
+                    {/* Bio */}
+                    <p className="text-slate-600 leading-6 group-hover:text-slate-700 transition-colors duration-300">
                       {m.bio}
                     </p>
                   </div>
