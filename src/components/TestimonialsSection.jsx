@@ -1,6 +1,6 @@
 // src/sections/Testimonials.jsx
 import { useEffect, useMemo, useRef, useState } from "react";
-import { FaLinkedinIn, FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn, FaXTwitter, FaFacebookF, FaInstagram } from "react-icons/fa6";
 
 // tiny util
 const cx = (...a) => a.filter(Boolean).join(" ");
@@ -10,10 +10,10 @@ const danceClass = "animate-[dance_1.8s_ease-in-out_infinite]";
 
 function StaticCompanyCard({ prefersReducedMotion = false }) {
   const socials = [
-    { Icon: FaLinkedinIn, href: "https://linkedin.com", label: "LinkedIn", delay: 0 },
-    { Icon: FaTwitter, href: "https://twitter.com", label: "Twitter", delay: 0.12 },
-    { Icon: FaFacebookF, href: "https://facebook.com", label: "Facebook", delay: 0.24 },
-    { Icon: FaInstagram, href: "https://instagram.com", label: "Instagram", delay: 0.36 },
+    { Icon: FaInstagram, href: "https://www.instagram.com/webify.tech/", label: "Instagram", delay: 0 },
+    { Icon: FaFacebookF, href: "https://www.facebook.com/people/Webify/100094385718385/", label: "Facebook", delay: 0.12 },
+    { Icon: FaLinkedinIn, href: "https://www.linkedin.com/company/webify-tech/?viewAsMember=true", label: "LinkedIn", delay: 0.24 },
+    { Icon: FaXTwitter, href: "/", label: "X (Twitter)", delay: 0.36 },
   ];
 
   return (

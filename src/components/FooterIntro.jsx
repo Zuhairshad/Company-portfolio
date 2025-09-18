@@ -22,7 +22,7 @@ export default function FooterIntro() {
       title: "Quick Links",
       items: [
         { label: "Home", href: "/" },
-        { label: "Our Work", href: "/our-work-portfolio" },
+        { label: "Our Work", href: "/work" },
         { label: "About", href: "/about" },
         { label: "Contact", href: "/contact" },
       ],
@@ -30,12 +30,12 @@ export default function FooterIntro() {
     {
       title: "Services",
       items: [
-        { label: "All Services", href: "/services" },
-        { label: "Web Design", href: "/web-design" },
-        { label: "Video Editing", href: "/" },
-        { label: "UI UX", href: "/ui-ux-agency" },
-        { label: "Google PPC Ads", href: "/marketing-consultation" },
-        { label: "SEO", href: "#" },
+        { label: "Web Development", href: "/services/web-development" },
+        { label: "Video Editing", href: "/services/video-editing" },
+        { label: "UI UX", href: "/services/UIUX" },
+        { label: "Google PPC Ads", href: "/services/google-ppc-ads" },
+        { label: "SEO", href: "/services/SEO" },
+        { label: "App Development", href: "/services/app-development" },
       ],
     },
   ];

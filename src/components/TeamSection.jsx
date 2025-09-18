@@ -77,7 +77,7 @@ export default function TeamSection() {
                     h-full rounded-2xl border border-slate-200 bg-white
                     shadow-sm hover:shadow-xl hover:shadow-orange-100/50
                     transition-all duration-300 ease-in-out
-                    hover:-translate-y-2 hover:border-orange-200
+                    hover:-translate-y-2
                     overflow-hidden group cursor-pointer
                   "
                 >
