@@ -11,7 +11,7 @@ const danceClass = "animate-[dance_1.8s_ease-in-out_infinite]";
 function StaticCompanyCard({ prefersReducedMotion = false }) {
   const socials = [
     { Icon: FaInstagram, href: "https://www.instagram.com/webify.tech/", label: "Instagram", delay: 0 },
-    { Icon: FaFacebookF, href: "https://www.facebook.com/people/Webify/100094385718385/", label: "Facebook", delay: 0.12 },
+    { Icon: FaFacebookF, href: "https://www.facebook.com/webifytechnologies", label: "Facebook", delay: 0.12 },
     { Icon: FaLinkedinIn, href: "https://www.linkedin.com/company/webify-tech/?viewAsMember=true", label: "LinkedIn", delay: 0.24 },
     { Icon: FaXTwitter, href: "/", label: "X (Twitter)", delay: 0.36 },
   ];

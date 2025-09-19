@@ -56,7 +56,7 @@ export default function TeamSection() {
             </h2>
             <p className="mt-5 text-slate-600 leading-7">
               We create great things by surrounding ourselves with great people. Our team blends
-              design, engineering, and research to ship work we’re proud of—every day.
+              design, engineering, and research to ship work we’re proud of every day.
             </p>
           </div>
         </div>
