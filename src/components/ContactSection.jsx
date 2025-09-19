@@ -195,7 +195,7 @@ async function handleSubmit(e) {
                     id="phone"
                     name="phone"
                     type="tel"
-                    required
+                    
                     className={baseInput}
                     value={form.phone}
                     onChange={onChange}
@@ -250,7 +250,7 @@ async function handleSubmit(e) {
                   <select
                     id="budget"
                     name="budget"
-                    required
+                    
                     className={selectClass}
                     value={form.budget}
                     onChange={onChange}
@@ -270,7 +270,7 @@ async function handleSubmit(e) {
                   <textarea
                     id="message"
                     name="message"
-                    required
+                    
                     rows={5}
                     className={baseInput}
                     value={form.message}
@@ -337,7 +337,7 @@ async function handleSubmit(e) {
     borderRadius: "0.75rem",
     fontSize: "0.9rem",
     zIndex: 50,
-    marginTop: "calc(var(--nav-h) + 40px)" // 👈 pushes it 40px below navbar
+    marginTop: "calc(var(--nav-h) + 40px)" 
   }}
 />
 
