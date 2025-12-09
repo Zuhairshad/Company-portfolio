@@ -1,0 +1,50 @@
+User-agent: *
+Allow: /
+# Block unnecessary admin and system folders
+Disallow: /wp-admin/
+Disallow: /wp-login/
+Disallow: /cgi-bin/
+Disallow: /temp/
+Disallow: /private/
+Disallow: /scripts/
+# Allow admin AJAX (Only for WordPress)
+Allow: /wp-admin/admin-ajax.php
+# Crawl-delay for safe crawling
+Crawl-delay: 2
+# Sitemap for Google and all search engines
+Sitemap: https://www.nextstac.com/sitemap.xml
+Sitemap: https://www.nextstac.com/sitemap_index.xml
+# Additional search engine support
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Googlebot-Mobile
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Slurp   # Yahoo
+Allow: /
+User-agent: DuckDuckBot
+Allow: /
+User-agent: Baiduspider
+Allow: /
+User-agent: Yandex
+Allow: /
+# Security Bots - Block malicious crawlers
+User-agent: AhrefsBot
+Disallow: /
+# Semrush Allowed for SEO
+User-agent: SemrushBot
+Allow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: DotBot
+Disallow: /
+User-agent: BLEXBot
+Disallow: /
+# Block spam bots
+User-agent: spam
+Disallow: /
+User-agent: crawler
+Disallow: /
