@@ -80,7 +80,7 @@ export default function ContactFormEmailJS() {
             </div>
           </div>
 
-          {/* Right column — form */}
+          {/* Right column - form */}
           <div className="lg:col-span-7">
             <form
               onSubmit={handleSubmit}

@@ -24,10 +24,10 @@ const DigitalMarketing = () => {
         <AwardSec 
         topText="Leading Digital Marketing Agency"
         heading="We Drive Digital Growth That Delivers"
-        subHeading="— Measurable Results Every Time"
+        subHeading=" - Measurable Results Every Time"
         description="Success in digital marketing is measured by performance, not promises. Webfiy Tech creates comprehensive digital strategies that drive qualified traffic, generate quality leads, and convert prospects into loyal customers.
         Our data-driven approach combines cutting-edge technology with proven methodologies to deliver campaigns that perform. From SEO and PPC to social media and content marketing, every tactic is strategically aligned to achieve your business objectives and deliver measurable ROI.
-        Your digital success depends on reaching the right audience at the right moment—our expertise ensures your message cuts through the noise and drives action."
+        Your digital success depends on reaching the right audience at the right moment - our expertise ensures your message cuts through the noise and drives action."
         />
 
         <ScrollSection

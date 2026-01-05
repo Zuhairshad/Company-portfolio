@@ -176,7 +176,7 @@ export default function IndustriesSection() {
           </h2>
           <p className="mt-4 text-base text-slate-600">
             As a company with over a decade of experience, we’re proud to have
-            partnered across many industries—expanding our expertise and
+            partnered across many industries - expanding our expertise and
             delivering excellent results for our clients.
           </p>
         </div>

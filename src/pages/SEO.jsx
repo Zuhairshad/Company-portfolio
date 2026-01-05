@@ -25,7 +25,7 @@ const SEO = () => {
       id: "technical-seo",
       title: "Technical SEO",
       paragraph:
-        "Fix what search engines see first—site architecture, crawlability, speed, and indexation—so every page can rank and scale with confidence.",
+        "Fix what search engines see first - site architecture, crawlability, speed, and indexation - so every page can rank and scale with confidence.",
       richText: (
         <>
           <p className="text-sm md:text-base mb-4">
@@ -51,7 +51,7 @@ const SEO = () => {
       id: "on-page-seo",
       title: "On-Page SEO",
       paragraph:
-        "Turn every page into a ranking asset—research, intent mapping, content structure, internal links, and metadata that earns higher positions.",
+        "Turn every page into a ranking asset - research, intent mapping, content structure, internal links, and metadata that earns higher positions.",
       richText: (
         <>
           <p className="text-sm md:text-base mb-4">
@@ -85,7 +85,7 @@ const SEO = () => {
       id: "off-page-seo",
       title: "Off-Page SEO",
       paragraph:
-        "Build authority the right way—editorial backlinks, digital PR, and content partnerships that compound rankings over time.",
+        "Build authority the right way - editorial backlinks, digital PR, and content partnerships that compound rankings over time.",
       richText: (
         <>
           <p className="text-sm md:text-base mb-4">
@@ -109,7 +109,7 @@ const SEO = () => {
       id: "local-seo",
       title: "Local SEO",
       paragraph:
-        "Dominate local search—optimize Google Business Profile, NAP consistency, local pages, and reviews to capture high-intent traffic.",
+        "Dominate local search - optimize Google Business Profile, NAP consistency, local pages, and reviews to capture high-intent traffic.",
       richText: (
         <>
           <p className="text-sm md:text-base mb-4">
@@ -139,7 +139,7 @@ const SEO = () => {
       id: "keyword-research",
       title: "Keyword Research",
       richText:
-        "Builds topic clusters from search intent and opportunity, not guesswork—foundational for content and IA.",
+        "Builds topic clusters from search intent and opportunity, not guesswork - foundational for content and IA.",
     },
     {
       id: "content-strategy",
@@ -151,7 +151,7 @@ const SEO = () => {
       id: "analytics-tracking",
       title: "Analytics & Tracking",
       richText:
-        "GA4, GSC, and conversion tracking set up right—so ranking gains connect to real revenue metrics.",
+        "GA4, GSC, and conversion tracking set up right - so ranking gains connect to real revenue metrics.",
     },
     {
       id: "site-migrations",
@@ -175,7 +175,7 @@ const SEO = () => {
       id: "competitive-gap",
       title: "Competitive Gap",
       richText:
-        "Identify your competitors’ weak spots—then outrank with better information gain and linkable assets.",
+        "Identify your competitors’ weak spots - then outrank with better information gain and linkable assets.",
     },
     {
       id: "reporting-cadence",
@@ -194,7 +194,7 @@ const SEO = () => {
       title: "Measurable Growth through",
       highlight: "Search Visibility",
       description:
-        "We connect rankings to revenue. Audits turn into roadmaps, and roadmaps turn into traction—better positions, more qualified traffic, and reliable lead flow.",
+        "We connect rankings to revenue. Audits turn into roadmaps, and roadmaps turn into traction - better positions, more qualified traffic, and reliable lead flow.",
       image:
         "https://images.unsplash.com/photo-1551281044-8d8d1ae5d87b?q=80&w=1600&auto=format&fit=crop",
     },
@@ -203,7 +203,7 @@ const SEO = () => {
       title: "Senior-Led Strategy with",
       highlight: "Hands-On Execution",
       description:
-        "Your SEO is led by senior specialists—technical, content, and digital PR—working together to execute the plan end-to-end.",
+        "Your SEO is led by senior specialists - technical, content, and digital PR - working together to execute the plan end-to-end.",
       image:
         "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1600&auto=format&fit=crop",
     },
@@ -212,7 +212,7 @@ const SEO = () => {
       title: "White-Hat Authority and",
       highlight: "Sustainable Results",
       description:
-        "We build durable organic growth. That means quality content, clean tech, and editorial links from reputable sites—no shortcuts.",
+        "We build durable organic growth. That means quality content, clean tech, and editorial links from reputable sites - no shortcuts.",
       image:
         "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop",
     },
@@ -265,7 +265,7 @@ const SEO = () => {
       stage: "Stage 2",
       title: "On-Page & Technical",
       description:
-        "We execute high-impact fixes and optimizations—so pages are fast, understandable, and easy for crawlers to index and rank.",
+        "We execute high-impact fixes and optimizations - so pages are fast, understandable, and easy for crawlers to index and rank.",
       glowColor: "green",
       steps: [
         {
@@ -351,24 +351,24 @@ const SEO = () => {
 
   return (
     <>
-      {/* HERO — keep layout, switch to SEO */}
+      {/* HERO - keep layout, switch to SEO */}
       <HeroSection
         backgroundImage="/18.png"
         marqueeText="SEARCH ENGINE OPTIMIZATION"
       />
 
-      {/* AWARD / INTRO — rewritten for SEO */}
+      {/* AWARD / INTRO - rewritten for SEO */}
       <AwardSec
         topText="Top SEO Company"
         heading="We grow your organic traffic"
         subHeading="and turn rankings into revenue."
-        description="Nextstac delivers complete SEO—technical, on-page, off-page, and local—tailored to your market. We audit, optimize, and build authority to improve search visibility, increase qualified traffic, and drive measurable business results."
+        description="Nextstac delivers complete SEO - technical, on-page, off-page, and local - tailored to your market. We audit, optimize, and build authority to improve search visibility, increase qualified traffic, and drive measurable business results."
       />
 
-      {/* BIG SPLIT SECTION — rewrite headline/paragraphs for SEO */}
+      {/* BIG SPLIT SECTION - rewrite headline/paragraphs for SEO */}
       <OnPageTechnicalSEO />
       <OffPageSEO />
-      {/* WHO WE ARE — SEO angle */}
+      {/* WHO WE ARE - SEO angle */}
       <section className="w-full px-8 md:px-20 py-24 flex flex-col justify-center items-center relative overflow-hidden bg-gray-50">
         <div className="max-w-[95em] w-full">
           <div className="relative rounded-3xl overflow-hidden bg-white shadow-lg p-12 md:p-16">
@@ -409,7 +409,7 @@ const SEO = () => {
                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                   By integrating branding insights, design knowledge, and marketing
                   know-how into SEO, we align your search strategy with your broader
-                  business objectives—delivering a unified, powerful online presence.
+                  business objectives - delivering a unified, powerful online presence.
                 </p>
               </div>
 
@@ -432,7 +432,7 @@ const SEO = () => {
                 </h3>
                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                   We evolve alongside the industry, refining tactics with each
-                  algorithm shift to achieve more than just rankings—driving traffic,
+                  algorithm shift to achieve more than just rankings - driving traffic,
                   ROI, and measurable business impact.
                 </p>
               </div>
@@ -463,7 +463,7 @@ const SEO = () => {
       </section>
 
 
-      {/* SERVICES GRID — now SEO services */}
+      {/* SERVICES GRID - now SEO services */}
       <div className="min-h-screen bg-gray-50">
         <section className="bg-gray-50 py-20 px-4 sm:px-6 lg:px-20">
           <div className="max-w-7xl mx-auto">
@@ -473,7 +473,7 @@ const SEO = () => {
                   Our SEO Services
                 </h1>
                 <p className="mt-4 text-gray-600 max-w-xl text-lg">
-                  Complete programs across <strong>Technical</strong>, <strong>On-Page</strong>, <strong>Off-Page</strong>, and <strong>Local</strong>—built to grow organic traffic and revenue.
+                  Complete programs across <strong>Technical</strong>, <strong>On-Page</strong>, <strong>Off-Page</strong>, and <strong>Local</strong> - built to grow organic traffic and revenue.
                 </p>
               </div>
               <div className="flex items-center space-x-4 mt-8 md:mt-0">
@@ -515,7 +515,7 @@ const SEO = () => {
         </section>
       </div>
 
-      {/* PROCESS — renamed and rewritten for SEO */}
+      {/* PROCESS - renamed and rewritten for SEO */}
       <section className="w-full flex flex-col justify-center items-center px-8 md:px-20 py-48 relative overflow-hidden text-[#f0f5fa] bg-[#0c1013]">
         <div className="max-w-[95em] w-full">
           <div className="mb-12 grid grid-cols-1 lg:grid-cols-3 gap-8">

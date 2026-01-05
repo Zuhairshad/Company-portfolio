@@ -131,7 +131,7 @@ export default function Services() {
     {
       title: "Digital Marketing",
       intro:
-        "Campaigns engineered for growth—full-funnel strategy across paid, social, and email.",
+        "Campaigns engineered for growth - full-funnel strategy across paid, social, and email.",
       more:
         "Our team crafts compelling creatives and landing pages, manages ad spend with precision, and leverages analytics to scale ROI. Whether performance marketing or brand awareness, we ensure your message resonates.",
       tags: ["Performance", "Social Ads", "Email/SMS", "Landing Pages", "Analytics"],
@@ -153,8 +153,7 @@ export default function Services() {
       more:
         "From brand kits and illustrations to marketing collaterals and social packs, our designers craft assets that tell your story consistently across platforms.",
       tags: ["Brand Kit", "Social Creatives", "Print", "Illustration"],
-      // TEMP: you don't have /services/graphic-designing route yet.
-      primary: { label: "Learn More", href: "/services/UIUX" },
+      primary: { label: "Learn More", href: "/services/graphic-designing" },
     },
     {
       title: "Google PPC Ads",
@@ -170,14 +169,14 @@ export default function Services() {
       intro:
         "Reliable remote support to keep your operations organized and moving.",
       more:
-        "Our virtual assistants can handle inbox management, CRM hygiene, research, scheduling, reporting, and more—giving you time to focus on strategic growth.",
+        "Our virtual assistants can handle inbox management, CRM hygiene, research, scheduling, reporting, and more - giving you time to focus on strategic growth.",
       tags: ["Admin", "Research", "CRM", "Scheduling", "Reporting"],
       primary: { label: "Learn More", href: "/services/virtual-assistance" },
     },
     {
       title: "Video Editing",
       intro:
-        "Scroll-stopping edits for ads, social, and brand stories—optimized per platform.",
+        "Scroll-stopping edits for ads, social, and brand stories - optimized per platform.",
       more:
         "From short-form TikTok/Reels to polished long-form YouTube edits, we cover cutting, captions, color grading, motion graphics, and sound design.",
       tags: ["Short-form", "Long-form", "Color", "Motion Graphics", "Captions"],
@@ -207,36 +206,36 @@ export default function Services() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14">
           {/* LEFT sticky info panel (sticky only on lg+) */}
           <aside className="col-span-1 self-start relative z-0 lg:sticky lg:top-24 lg:-ml-6">
-  <div className="space-y-4 bg-[#FAF9F6]">
-    <div className="text-xs uppercase tracking-wide text-slate-500">
-      What We Do
-    </div>
-    <p className="text-xl font-semibold text-slate-900">
-      Practical & creative solutions to help your business grow
-    </p>
+            <div className="space-y-4 bg-[#FAF9F6]">
+              <div className="text-xs uppercase tracking-wide text-slate-500">
+                What We Do
+              </div>
+              <p className="text-xl font-semibold text-slate-900">
+                Practical & creative solutions to help your business grow
+              </p>
 
-    <div className="overflow-hidden border border-slate-200 bg-white shadow-md">
-      <div className="relative w-full h-60">
-        <img
-          src={`${base}?${query}&w=1200`}
-          srcSet={srcSet}
-          sizes="(min-width: 1024px) 384px, 100vw"
-          alt="Modern office workspace"
-          className="w-full h-full object-cover"
-          loading="lazy"
-          decoding="async"
-        />
-      </div>
-      <div className="p-5">
-        
-        <Link
-                  to="/"
-                  className="text-black"
-                >
-                  Read our case
-                </Link>
-      </div>
-    </div>
+              <div className="overflow-hidden border border-slate-200 bg-white shadow-md">
+                <div className="relative w-full h-60">
+                  <img
+                    src={`${base}?${query}&w=1200`}
+                    srcSet={srcSet}
+                    sizes="(min-width: 1024px) 384px, 100vw"
+                    alt="Modern office workspace"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div className="p-5">
+
+                  <Link
+                    to="/about"
+                    className="text-black"
+                  >
+                    Read our case
+                  </Link>
+                </div>
+              </div>
 
 
               <div className="flex items-center gap-3">
@@ -253,7 +252,7 @@ export default function Services() {
             </div>
           </aside>
 
-          {/* RIGHT cards — gate the whole grid for TBT savings */}
+          {/* RIGHT cards - gate the whole grid for TBT savings */}
           <div className="lg:col-span-2 relative z-10">
             <LazyMount minHeight={280}>
               <Suspense fallback={null}>

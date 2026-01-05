@@ -11,7 +11,6 @@ Disallow: /scripts/
 # Allow admin AJAX (Only for WordPress)
 Allow: /wp-admin/admin-ajax.php
 # Crawl-delay for safe crawling
-Crawl-delay: 2
 # Sitemap for Google and all search engines
 Sitemap: https://www.nextstac.com/sitemap.xml
 Sitemap: https://www.nextstac.com/sitemap_index.xml

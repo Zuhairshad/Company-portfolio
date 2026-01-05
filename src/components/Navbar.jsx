@@ -27,7 +27,7 @@ export default function Navbar() {
     };
   }, [mobileOpen]);
 
-  // compact nav on scroll — only update state when threshold crosses
+  // compact nav on scroll - only update state when threshold crosses
   useEffect(() => {
     const root = document.documentElement;
     let ticking = false;
@@ -136,7 +136,7 @@ export default function Navbar() {
         <Link
           to="/"
           className="flex items-center gap-1 !pl-0 min-w-0"
-          aria-label="NextStac — Home"
+          aria-label="NextStac - Home"
         >
           <span
             className={cx(

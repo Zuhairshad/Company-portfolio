@@ -365,7 +365,7 @@ const GraphicDesigning = () => {
               {/* Right */}
               <div className="flex-1 text-gray-200 space-y-6 text-xl leading-relaxed">
                 <p>
-                  Great design isn't just about looking good—it's about communicating effectively 
+                  Great design isn't just about looking good - it's about communicating effectively 
                   and driving business results. We combine strategic thinking with creative excellence 
                   to deliver graphics that captivate, inform, and convert.
                 </p>

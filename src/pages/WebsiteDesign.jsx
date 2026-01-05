@@ -37,8 +37,8 @@ const WebsiteDesign = () => {
             elegant, fast, and conversion-ready.
           </p>
           <p className="text-sm md:text-base mb-4">
-            We combine aesthetics with UX psychology—clear information hierarchy,
-            consistent components, and accessible patterns—so the site is both
+            We combine aesthetics with UX psychology - clear information hierarchy,
+            consistent components, and accessible patterns - so the site is both
             memorable and easy to use. If you want a custom design that lifts your
             brand and performance, NextStac can help.
           </p>
@@ -56,7 +56,7 @@ const WebsiteDesign = () => {
       id: "ui-ux",
       title: "UI/UX",
       paragraph:
-        "We craft UI/UX that feels effortless—clear journeys, helpful micro-interactions, and layouts that guide users to the right outcome.",
+        "We craft UI/UX that feels effortless - clear journeys, helpful micro-interactions, and layouts that guide users to the right outcome.",
       richText: (
         <>
           <p className="text-sm md:text-base mb-4">
@@ -107,7 +107,7 @@ const WebsiteDesign = () => {
       id: "website-development",
       title: "Website Development",
       paragraph:
-        "Our full-stack team ships robust, scalable builds that match design intent pixel-for-pixel—and stay maintainable long after launch.",
+        "Our full-stack team ships robust, scalable builds that match design intent pixel-for-pixel - and stay maintainable long after launch.",
       richText: (
         <>
           <p className="text-sm md:text-base mb-4">
@@ -129,7 +129,7 @@ const WebsiteDesign = () => {
           </p>
           <p className="text-sm md:text-base mb-4">
             Near launch, we run technical reviews, performance passes, and
-            accessibility audits—so handoff is smooth and your marketing team can
+            accessibility audits - so handoff is smooth and your marketing team can
             move fast on day one.
           </p>
         </>
@@ -149,7 +149,7 @@ const WebsiteDesign = () => {
       id: "future-proof-strategies",
       title: "Future-Proof Strategies",
       richText:
-        "We design with tomorrow in mind—flexible systems, modular components, and a roadmap that can grow with your goals.",
+        "We design with tomorrow in mind - flexible systems, modular components, and a roadmap that can grow with your goals.",
     },
     {
       id: "senior-team",
@@ -167,7 +167,7 @@ const WebsiteDesign = () => {
       id: "partnership",
       title: "Partnership",
       richText:
-        "We work with you, not just for you—co-creating goals, sharing progress often, and making decisions transparently.",
+        "We work with you, not just for you - co-creating goals, sharing progress often, and making decisions transparently.",
     },
     {
       id: "seo-focused",
@@ -191,7 +191,7 @@ const WebsiteDesign = () => {
       id: "backed-by-strategy",
       title: "Backed by Strategy",
       richText:
-        "Research, positioning, and clear KPIs guide design and development—so the site looks great and performs.",
+        "Research, positioning, and clear KPIs guide design and development - so the site looks great and performs.",
     },
   ];
 
@@ -291,7 +291,7 @@ const WebsiteDesign = () => {
       title: "Extensive Industry Expertise and",
       highlight: "Client-Focused Solutions",
       description:
-        "At Nextstac, we leverage deep industry knowledge to craft tailored website solutions that fit your unique goals. Every project is designed around your business objectives—not a one-size-fits-all model—ensuring precision, relevance, and measurable impact that helps your brand stand out in the market.",
+        "At Nextstac, we leverage deep industry knowledge to craft tailored website solutions that fit your unique goals. Every project is designed around your business objectives - not a one-size-fits-all model - ensuring precision, relevance, and measurable impact that helps your brand stand out in the market.",
       image:
         "https://cdn.prod.website-files.com/630bc5625ada9a1e2dbb10a6/661d4d7cf9b52a7779e62f10_Flipp.avif",
     },
@@ -309,7 +309,7 @@ const WebsiteDesign = () => {
       title: "Modern, Visionary, and",
       highlight: "Tailored Design",
       description:
-        "We stay ahead of trends to deliver designs that are not only current but also forward-thinking. Each Nextstac project is crafted to reflect your unique brand identity, industry, and goals—ensuring a custom design that is both timeless and adaptable to evolving market demands.",
+        "We stay ahead of trends to deliver designs that are not only current but also forward-thinking. Each Nextstac project is crafted to reflect your unique brand identity, industry, and goals - ensuring a custom design that is both timeless and adaptable to evolving market demands.",
       image:
         "https://cdn.prod.website-files.com/630bc5625ada9a1e2dbb10a6/661d4d7bcf37920bc03e72f4_ReadyMode.avif",
     },
@@ -514,7 +514,7 @@ const WebsiteDesign = () => {
               {/* Right */}
               <div className="flex-1 text-gray-200 space-y-6 text-sm md:text-base leading-relaxed">
                 <p>
-                  Your website is often the first interaction customers have with your brand—so it
+                  Your website is often the first interaction customers have with your brand - so it
                   needs to be more than just visually appealing. At <strong>Nextstac</strong>, we
                   craft sites that blend stunning design with seamless usability, helping your business
                   stand out in a crowded digital landscape.
@@ -522,7 +522,7 @@ const WebsiteDesign = () => {
                 <p>
                   Our team combines creative design with technical expertise, grounded in user
                   psychology and conversion strategy. The result is a website that not only looks
-                  impressive but also delivers measurable outcomes—engaging audiences, building trust,
+                  impressive but also delivers measurable outcomes - engaging audiences, building trust,
                   and accelerating growth.
                 </p>
               </div>

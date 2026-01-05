@@ -22,7 +22,7 @@ const VideoEditing = () => {
       id: "short-form",
       title: "Short-Form Editing (Reels/Shorts/TikTok)",
       paragraph:
-        "Hook-first edits optimized for mobile retention—snappy pacing, subtitles, sound design, and seamless transitions to keep viewers watching.",
+        "Hook-first edits optimized for mobile retention - snappy pacing, subtitles, sound design, and seamless transitions to keep viewers watching.",
       richText: (
         <>
           <p className="text-sm md:text-base mb-4">
@@ -41,7 +41,7 @@ const VideoEditing = () => {
       id: "long-form",
       title: "Long-Form Editing (YouTube/Podcasts)",
       paragraph:
-        "Narrative-driven edits with clean structure—selects, pacing, b-roll, and graphics that turn raw footage into watchable stories.",
+        "Narrative-driven edits with clean structure - selects, pacing, b-roll, and graphics that turn raw footage into watchable stories.",
       richText: (
         <>
           <p className="text-sm md:text-base mb-4">
@@ -59,7 +59,7 @@ const VideoEditing = () => {
       id: "color-sound",
       title: "Color Grading & Sound Mix",
       paragraph:
-        "Make footage pop and audio sit right—balanced color, noise reduction, EQ/comp, and broadcast-safe loudness.",
+        "Make footage pop and audio sit right - balanced color, noise reduction, EQ/comp, and broadcast-safe loudness.",
       richText: (
         <>
           <p className="text-sm md:text-base mb-4">
@@ -192,7 +192,7 @@ const VideoEditing = () => {
 
   return (
     <>
-      {/* HERO — Video Editing */}
+      {/* HERO - Video Editing */}
       <HeroSection
         backgroundImage="/25.png"
         marqueeText="VIDEO EDITING SERVICES"
@@ -221,7 +221,7 @@ const VideoEditing = () => {
               <div className="p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Creator-Speed Turnarounds</h3>
                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                  Clear milestones, review links, and fast iterations—so you can publish consistently.
+                  Clear milestones, review links, and fast iterations - so you can publish consistently.
                 </p>
               </div>
               <div className="p-6 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition">
@@ -261,7 +261,7 @@ const VideoEditing = () => {
         </div>
       </section>
 
-      {/* SERVICES GRID — Video Editing */}
+      {/* SERVICES GRID - Video Editing */}
       <div className="min-h-screen bg-gray-50">
         <section className="bg-gray-50 py-20 px-4 sm:px-6 lg:px-20">
           <div className="max-w-7xl mx-auto">
@@ -271,7 +271,7 @@ const VideoEditing = () => {
                   Our Video Editing Services
                 </h1>
                 <p className="mt-4 text-gray-600 max-w-xl text-lg">
-                  Short-form, long-form, motion graphics, color & audio—delivered in platform-ready packages.
+                  Short-form, long-form, motion graphics, color & audio - delivered in platform-ready packages.
                 </p>
               </div>
               <div className="flex items-center space-x-4 mt-8 md:mt-0">
@@ -313,7 +313,7 @@ const VideoEditing = () => {
         </section>
       </div>
 
-      {/* PROCESS — Video Editing */}
+      {/* PROCESS - Video Editing */}
       <section className="w-full flex flex-col justify-center items-center px-8 md:px-20 py-48 relative overflow-hidden text-[#f0f5fa] bg-[#0c1013]">
         <div className="max-w-[95em] w-full">
           <div className="mb-12 grid grid-cols-1 lg:grid-cols-3 gap-8">

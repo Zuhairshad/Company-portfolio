@@ -29,8 +29,7 @@ function StaticCompanyCard({ prefersReducedMotion = false }) {
         <div>
           <h3 className="text-xl font-semibold text-slate-900">NextStac</h3>
           <p className="mt-1.5 text-sm text-slate-600">
-            Our vision is to craft premium, performant web experiences that grow with your business —
-            merging clean UX, modern engineering, and measurable outcomes.
+            Our vision is to craft premium, performant web experiences that grow with your business - merging clean UX, modern engineering, and measurable outcomes.
           </p>
 
           <div className="mt-4 flex items-center gap-3">

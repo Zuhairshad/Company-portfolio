@@ -42,7 +42,7 @@ const projects = [
       outcome:
         "Alignment across teams, 12-week delivery plan approved, and faster sign-offs on key projects.",
       testimonial:
-        "“The roadmap removed gridlock. We finally had shared KPIs and a realistic delivery plan.” — VP Operations",
+        "“The roadmap removed gridlock. We finally had shared KPIs and a realistic delivery plan.” - VP Operations",
     },
   },
   {
@@ -80,7 +80,7 @@ const projects = [
       outcome:
         "Checkout failures down 35%, deployments 3× more frequent, and clearer ownership boundaries.",
       testimonial:
-        "“We regained confidence in shipping. Observability and ownership lines changed the culture.” — CTO",
+        "“We regained confidence in shipping. Observability and ownership lines changed the culture.” - CTO",
     },
   },
 
@@ -119,7 +119,7 @@ const projects = [
       outcome:
         "+48% non-brand organic traffic and +23% average position across priority keywords in 90 days.",
       testimonial:
-        "“We finally rank where our product deserves to be.” — VP Growth",
+        "“We finally rank where our product deserves to be.” - VP Growth",
     },
   },
   {
@@ -227,7 +227,7 @@ const projects = [
       outcome:
         "Approved name and messaging framework; improved pitch clarity and investor engagement.",
       testimonial:
-        "“The name and story made fundraising conversations smoother from day one.” — Co-founder",
+        "“The name and story made fundraising conversations smoother from day one.” - Co-founder",
     },
   },
 
@@ -484,7 +484,7 @@ const projects = [
       outcome:
         "Activation rate +19% and time-to-first-value shortened by 35%.",
       testimonial:
-        "“The guided flow cut confusion dramatically in week one.” — Product Director",
+        "“The guided flow cut confusion dramatically in week one.” - Product Director",
     },
   },
 
@@ -671,7 +671,7 @@ const projects = [
       outcome:
         "Multiple award recognitions and increased inbound inquiries.",
       testimonial:
-        "“The brand finally matches how we work—confident, fast, and polished.” — Founder",
+        "“The brand finally matches how we work - confident, fast, and polished.” - Founder",
     },
   },
 ];

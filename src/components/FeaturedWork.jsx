@@ -210,7 +210,7 @@ export default function FeaturedWork() {
     <section className="section bg-slate-100 py-16 lg:py-24">
       <div className="mx-auto w-full max-w-[90rem] px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-12 gap-8 lg:gap-10">
-          {/* Left aside — sticky only on lg+ */}
+          {/* Left aside - sticky only on lg+ */}
           <aside className="col-span-12 lg:col-span-3 self-start relative z-10 lg:sticky lg:top-24">
             <div className="space-y-6">
               <div>
@@ -242,7 +242,7 @@ export default function FeaturedWork() {
             </div>
           </aside>
 
-          {/* Right — project cards */}
+          {/* Right - project cards */}
           <div className="col-span-12 lg:col-span-9 space-y-10 relative z-0">
             {/* First card eager for instant visual */}
             {items.length > 0 && <ProjectCard {...items[0]} eager />}

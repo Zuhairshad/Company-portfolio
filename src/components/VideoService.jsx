@@ -6,7 +6,7 @@ export default function VideoService() {
     },
     {
       title: "Rough Cut & Story Assembly",
-      desc: "We build the narrative from selects—tight pacing, clear beats, and structured arcs. Filler is trimmed, context is front-loaded, and hooks land in the first 3–5 seconds."
+      desc: "We build the narrative from selects - tight pacing, clear beats, and structured arcs. Filler is trimmed, context is front-loaded, and hooks land in the first 3–5 seconds."
     },
     {
       title: "Motion Graphics & Titles",
@@ -57,7 +57,7 @@ export default function VideoService() {
 
               <p className="mt-4 text-sm leading-6 text-slate-600">
                 We turn raw footage into compelling stories. From rough cut to
-                motion graphics, color, captions, and sound mix—every step is
+                motion graphics, color, captions, and sound mix - every step is
                 engineered for retention, clarity, and platform performance.
               </p>
             </div>
@@ -69,7 +69,7 @@ export default function VideoService() {
               Our editing pipeline balances creative storytelling with technical
               precision. Each deliverable is tailored to your channels and
               audience, ensuring clean visuals, crisp audio, and scroll-stopping
-              opens—without sacrificing brand consistency.
+              opens - without sacrificing brand consistency.
             </p>
 
             <div className="mt-6 space-y-5">

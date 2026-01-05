@@ -13,7 +13,7 @@ function labelize(key) {
     .replace(/^./, (c) => c.toUpperCase());
 }
 function fmt(v) {
-  if (v == null) return "—";
+  if (v == null) return " - ";
   return typeof v === "number" ? String(v) : String(v);
 }
 /** Prefer paired baseline→after metrics; otherwise show top-level scalar metrics */

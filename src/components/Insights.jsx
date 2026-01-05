@@ -52,7 +52,7 @@ const latestFeature = {
 const trending = [
   {
     category: "Marketing",
-    title: "2025 Brand Design Trends: From Neobrutalism To Soft Glass — What Actually Converts",
+    title: "2025 Brand Design Trends: From Neobrutalism To Soft Glass - What Actually Converts",
     href: "/post/2025-brand-design-trends-that-convert",
     image:
       "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200&auto=format&fit=crop",

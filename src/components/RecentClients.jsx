@@ -61,7 +61,7 @@ export default function RecentClients() {
           Our Recent Client
         </h2>
         <p className="mt-3 md:mt-4 text-slate-600">
-          Trusted by top brands and businesses — here are some of our latest collaborations.
+          Trusted by top brands and businesses - here are some of our latest collaborations.
         </p>
 
         {/* Carousel */}

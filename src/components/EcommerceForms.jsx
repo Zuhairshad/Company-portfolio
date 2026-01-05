@@ -81,7 +81,7 @@ export default function EcommerceForms() {
             </div>
           </div>
 
-          {/* Right column — form */}
+          {/* Right column - form */}
           <div className="lg:col-span-7">
             <form onSubmit={handleSubmit} className="relative z-[100] overflow-visible bg-white p-6 sm:p-8 rounded-2xl">
               {/* Hidden context so your EmailJS template knows this is ecom */}

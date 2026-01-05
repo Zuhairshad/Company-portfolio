@@ -8,9 +8,9 @@ const faqs = [
     q: "What are the costs of managing a store on Amazon, eBay, and Etsy?",
     a: `The cost of our marketplace marketing services varies depending on scope and platform.
         Estimated prices:
-        • Amazon — from $800
-        • Etsy — from $500
-        • eBay — from $500
+        • Amazon - from $800
+        • Etsy - from $500
+        • eBay - from $500
         Contact our specialists for an exact quote tailored to your project.`,
     cat: "All",
   },
@@ -24,7 +24,7 @@ const faqs = [
     q: "Why do you need business analysis?",
     a: `Business analysis helps you identify key market challenges and opportunities before launching.
         It includes evaluating the best products, target regions, competition level, pricing, delivery methods,
-        and projected turnover — leading to data-driven decisions and stronger market entry.`,
+        and projected turnover - leading to data-driven decisions and stronger market entry.`,
     cat: "All",
   },
   {
@@ -40,7 +40,7 @@ const faqs = [
     q: "How is product certification verified?",
     a: `Product certification depends on category and region:
         • Determine if certification is required
-        • Toys — certification in Europe and SPSC
+        • Toys - certification in Europe and SPSC
         • FDA registration for food, pet food, cosmetics, etc.
         • CPNP notification (EU cosmetics)
         • FDA approval for cosmetic products`,
@@ -48,10 +48,7 @@ const faqs = [
   },
   {
     q: "What does it mean to promote listings?",
-    a: `Promotion means optimizing product visibility, content, and advertising across marketplaces.
-        — Amazon: Keyword research, listing optimization, compliant copywriting, GTIN/UPC support, and indexing checks.
-        — eBay: Tailored copy, keyword strategy, visuals, HTML templates, listing uploads, and StoreFront creation.
-        — Etsy: Content creation, visuals, coupon promotions, listing updates, and platform support.`,
+    a: `Promotion means optimizing product visibility, content, and advertising across marketplaces. - Amazon: Keyword research, listing optimization, compliant copywriting, GTIN/UPC support, and indexing checks. - eBay: Tailored copy, keyword strategy, visuals, HTML templates, listing uploads, and StoreFront creation. - Etsy: Content creation, visuals, coupon promotions, listing updates, and platform support.`,
     cat: "All",
   },
 ];

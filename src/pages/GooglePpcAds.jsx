@@ -24,7 +24,7 @@ const GooglePpcAds = () => {
             title: "What is Google PPC?",
             eyebrow: "Google Ads",
             description:
-              "Pay-Per-Click (PPC) on Google is a performance marketing model where you pay only when someone clicks your ad. With precise keyword targeting, audience segments, and intent-driven placements, Google Ads puts your offer in front of high-intent users at the exact moment they’re searching—driving qualified traffic, leads, and sales with measurable ROI.",
+              "Pay-Per-Click (PPC) on Google is a performance marketing model where you pay only when someone clicks your ad. With precise keyword targeting, audience segments, and intent-driven placements, Google Ads puts your offer in front of high-intent users at the exact moment they’re searching - driving qualified traffic, leads, and sales with measurable ROI.",
             image:
               "/ppc1.jpeg",
             reverse: false,
@@ -57,8 +57,8 @@ const GooglePpcAds = () => {
               <p className="text-base text-white leading-relaxed">
                 Great PPC blends strategy and execution. Ad relevance and keyword
                 intent win the auction; landing page experience and conversion
-                design win the revenue. We connect the dots—researching queries,
-                crafting persuasive ads, and optimizing pages—then iterate with
+                design win the revenue. We connect the dots - researching queries,
+                crafting persuasive ads, and optimizing pages - then iterate with
                 A/B tests, bid strategies, and negative keywords to compound
                 results over time.
               </p>

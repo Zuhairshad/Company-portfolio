@@ -7,7 +7,7 @@ const faqs = [
   // --- All (shared) ---
   {
     q: "Why partner with NextStac?",
-    a: `We lead with clarity, craft, and honest process. We take on work where our experience makes a visible difference—then deliver it with tight communication and measurable outcomes. Our team’s work is consistently top-rated across industry platforms.`,
+    a: `We lead with clarity, craft, and honest process. We take on work where our experience makes a visible difference - then deliver it with tight communication and measurable outcomes. Our team’s work is consistently top-rated across industry platforms.`,
     cat: "All",
   },
   {
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "What’s inside a branding package?",
-    a: `Two tracks: (1) Strategy—research, positioning, messaging; (2) Identity—logo system, color, typography, visual language, and brand guidelines.`,
+    a: `Two tracks: (1) Strategy - research, positioning, messaging; (2) Identity - logo system, color, typography, visual language, and brand guidelines.`,
     cat: "All",
   },
   {
@@ -42,17 +42,17 @@ const faqs = [
   },
   {
     q: "Do you offer SEO?",
-    a: `Yes—technical and on-page foundations, content planning, and authority building. We tailor retainers to your goals and timeline.`,
+    a: `Yes - technical and on-page foundations, content planning, and authority building. We tailor retainers to your goals and timeline.`,
     cat: "All",
   },
   {
     q: "Who do you usually work with?",
-    a: `Startups to enterprise across tech, professional services, real estate, and nonprofits—primarily North America with international clients as well.`,
+    a: `Startups to enterprise across tech, professional services, real estate, and nonprofits - primarily North America with international clients as well.`,
     cat: "All",
   },
   {
     q: "Do you provide ongoing maintenance?",
-    a: `Yes—monthly plans or ad-hoc support for updates, fixes, and optimizations.`,
+    a: `Yes - monthly plans or ad-hoc support for updates, fixes, and optimizations.`,
     cat: "All",
   },
 
@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     q: "Do you build on WordPress?",
-    a: `Yes—custom themes and component systems, as well as headless WordPress when needed.`,
+    a: `Yes - custom themes and component systems, as well as headless WordPress when needed.`,
     cat: "Website",
   },
   {
@@ -94,7 +94,7 @@ const faqs = [
   },
   {
     q: "Do you work internationally?",
-    a: `Yes—we operate remotely and support clients across time zones.`,
+    a: `Yes - we operate remotely and support clients across time zones.`,
     cat: "Website",
   },
   {
@@ -104,7 +104,7 @@ const faqs = [
   },
   {
     q: "What is wireframing?",
-    a: `Low-fidelity screens to align structure and flows before design—reducing revisions and accelerating build time.`,
+    a: `Low-fidelity screens to align structure and flows before design - reducing revisions and accelerating build time.`,
     cat: "Website",
   },
   {
@@ -124,12 +124,12 @@ const faqs = [
   },
   {
     q: "Is there a page limit?",
-    a: `No fixed cap—page count and content depth inform the scope and timeline. We’ll right-size together.`,
+    a: `No fixed cap - page count and content depth inform the scope and timeline. We’ll right-size together.`,
     cat: "Website",
   },
   {
-    q: "I’m new to WordPress—do you train?",
-    a: `Yes—live walkthroughs plus quick-reference docs at handover.`,
+    q: "I’m new to WordPress - do you train?",
+    a: `Yes - live walkthroughs plus quick-reference docs at handover.`,
     cat: "Website",
   },
   {
@@ -139,19 +139,19 @@ const faqs = [
   },
   {
     q: "Which platforms do you support?",
-    a: `WordPress, Webflow, Wix, Squarespace—and custom stacks when the project calls for it.`,
+    a: `WordPress, Webflow, Wix, Squarespace - and custom stacks when the project calls for it.`,
     cat: "Website",
   },
   {
     q: "Which CRMs can you integrate?",
-    a: `Common connections include HubSpot, Salesforce, Pardot, and Marketo—plus others via API/Zapier as needed.`,
+    a: `Common connections include HubSpot, Salesforce, Pardot, and Marketo - plus others via API/Zapier as needed.`,
     cat: "Website",
   },
 
   // --- Branding tab specifics ---
   {
     q: "What is brand positioning?",
-    a: `The strategic place your brand occupies in the market and in the customer’s mind—clear differentiation against alternatives.`,
+    a: `The strategic place your brand occupies in the market and in the customer’s mind - clear differentiation against alternatives.`,
     cat: "Branding",
   },
   {
@@ -161,17 +161,17 @@ const faqs = [
   },
   {
     q: "What is a brand persona?",
-    a: `An archetype that captures your brand’s character—helpful for steering tone, messaging, and creative decisions.`,
+    a: `An archetype that captures your brand’s character - helpful for steering tone, messaging, and creative decisions.`,
     cat: "Branding",
   },
   {
-    q: "Voice vs. tone—what’s the difference?",
+    q: "Voice vs. tone - what’s the difference?",
     a: `Voice is your constant personality; tone flexes to the context (e.g., sales page vs. help doc) while staying on-brand.`,
     cat: "Branding",
   },
   {
     q: "Why invest in brand research?",
-    a: `It grounds creative decisions in evidence—audience insight, competitive mapping, and positioning that drives effective identity work.`,
+    a: `It grounds creative decisions in evidence - audience insight, competitive mapping, and positioning that drives effective identity work.`,
     cat: "Branding",
   },
 ];

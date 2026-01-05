@@ -57,7 +57,7 @@ const UIUX = () =>{
           </h5>
 
           <div className="max-w-3xl mx-auto">
-            <p className="text-base text-white leading-relaxed">While UI focuses on the tangible elements, UX addresses the overall feel and effectiveness of the experience. Think of UI as the tools a user needs for their journey—elegant, precise, and pleasing. UX is the path itself—the ease of navigation, the anticipation of their needs, and the satisfaction of reaching their destination effortlessly. Together, they create a harmonious digital environment that not only looks exceptional but also feels right.</p>
+            <p className="text-base text-white leading-relaxed">While UI focuses on the tangible elements, UX addresses the overall feel and effectiveness of the experience. Think of UI as the tools a user needs for their journey - elegant, precise, and pleasing. UX is the path itself - the ease of navigation, the anticipation of their needs, and the satisfaction of reaching their destination effortlessly. Together, they create a harmonious digital environment that not only looks exceptional but also feels right.</p>
           </div>
     <div className="flex gap-2 md:gap-4 m-4 h-64 md:h-96">
       <img

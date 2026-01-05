@@ -31,7 +31,7 @@ const AppDevelopment = () => {
             ensure consistency across features and future updates.
           </p>
           <p className="text-sm md:text-base mb-4">
-            The result is a UI that looks great and a UX that’s genuinely helpful—so onboarding is shorter,
+            The result is a UI that looks great and a UX that’s genuinely helpful - so onboarding is shorter,
             retention is higher, and reviews trend upward.
           </p>
         </>
@@ -57,7 +57,7 @@ const AppDevelopment = () => {
             retention, and revenue goals.
           </p>
           <p className="text-sm md:text-base mb-4">
-            Roadmaps are living documents—built to adapt as we learn from analytics and user feedback.
+            Roadmaps are living documents - built to adapt as we learn from analytics and user feedback.
           </p>
           <a
             href="/services/product-strategy"
@@ -82,7 +82,7 @@ const AppDevelopment = () => {
       id: "app-development",
       title: "Mobile App Development",
       paragraph:
-        "We build reliable, secure, and high-performance apps—architected for speed today and scale tomorrow—while matching design intent pixel-for-pixel.",
+        "We build reliable, secure, and high-performance apps - architected for speed today and scale tomorrow - while matching design intent pixel-for-pixel.",
       richText: (
         <>
           <p className="text-sm md:text-base mb-4">
@@ -121,7 +121,7 @@ const AppDevelopment = () => {
       id: "performance",
       title: "Performance & Reliability",
       richText:
-        "Cold-start budgets, bundle discipline, network efficiency, and crash-free sessions—measured and improved with every release.",
+        "Cold-start budgets, bundle discipline, network efficiency, and crash-free sessions - measured and improved with every release.",
     },
     {
       id: "integrations",
@@ -133,19 +133,19 @@ const AppDevelopment = () => {
       id: "lifecycle",
       title: "Full Lifecycle Support",
       richText:
-        "From discovery to post-launch growth—backlog grooming, A/B tests, and iteration cadence built around your KPIs.",
+        "From discovery to post-launch growth - backlog grooming, A/B tests, and iteration cadence built around your KPIs.",
     },
     {
       id: "accessibility",
       title: "Accessible by Design",
       richText:
-        "Color contrast, semantics, dynamic type, and assistive tech support are standard—not afterthoughts.",
+        "Color contrast, semantics, dynamic type, and assistive tech support are standard - not afterthoughts.",
     },
     {
       id: "observability",
       title: "Observability",
       richText:
-        "Dashboards for usage, retention, performance, and crashes so you always know what to build next—and why.",
+        "Dashboards for usage, retention, performance, and crashes so you always know what to build next - and why.",
     },
     {
       id: "scalability",
@@ -168,7 +168,7 @@ const AppDevelopment = () => {
       title: "Deep Product Thinking and",
       highlight: "Measurable Outcomes",
       description:
-        "We translate strategy into roadmaps, align on KPIs, and instrument the app from day one—so every release earns its keep with clear, trackable impact.",
+        "We translate strategy into roadmaps, align on KPIs, and instrument the app from day one - so every release earns its keep with clear, trackable impact.",
       image:
         "https://cdn.prod.website-files.com/630bc5625ada9a1e2dbb10a6/661d4d7cf9b52a7779e62f10_Flipp.avif",
     },
@@ -177,7 +177,7 @@ const AppDevelopment = () => {
       title: "Senior Talent and",
       highlight: "Hands-On Delivery",
       description:
-        "Leads who have shipped complex mobile apps own the work—not just supervise it—so decisions are fast, context-rich, and high quality.",
+        "Leads who have shipped complex mobile apps own the work - not just supervise it - so decisions are fast, context-rich, and high quality.",
       image:
         "https://cdn.prod.website-files.com/630bc5625ada9a1e2dbb10a6/661d4d7b765b6b416fa0eb20_Retina.avif",
     },
@@ -261,7 +261,7 @@ const AppDevelopment = () => {
       stage: "Stage 3",
       title: "Engineering & QA",
       description:
-        "We implement resilient, testable code with the pipelines to ship safely and often—keeping quality high and surprises low.",
+        "We implement resilient, testable code with the pipelines to ship safely and often - keeping quality high and surprises low.",
       glowColor: "red",
       steps: [
         {
@@ -285,7 +285,7 @@ const AppDevelopment = () => {
       stage: "Stage 4",
       title: "Launch & Growth",
       description:
-        "We release, observe, and iterate—turning real-world usage into product decisions that increase retention and ROI.",
+        "We release, observe, and iterate - turning real-world usage into product decisions that increase retention and ROI.",
       glowColor: "blue",
       steps: [
         {

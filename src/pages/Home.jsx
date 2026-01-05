@@ -69,7 +69,7 @@ function SectionFallback() {
 export default function Home() {
   return (
     <div className="bg-white">
-      {/* Navbar is already rendered in App.jsx — avoid double render */}
+      {/* Navbar is already rendered in App.jsx - avoid double render */}
 
       <main className="container-x pb-2 bg-white !pt-0">
         {/* Eager/LCP */}

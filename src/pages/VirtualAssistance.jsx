@@ -239,7 +239,7 @@ const VirtualAssistance = () => {
                 <p>
                   <strong>Nextstac</strong> supplies dedicated Virtual Assistants who
                   take on your admin, inbox & calendar, customer support, research, CRM
-                  updates, and operations—so your team can focus on high-leverage work.
+                  updates, and operations - so your team can focus on high-leverage work.
                 </p>
                 <p>
                   We’re process-driven: documented SOPs, clear SLAs, and weekly reports.
